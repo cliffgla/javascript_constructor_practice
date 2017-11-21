@@ -12,8 +12,8 @@ var cliffyAddress = new AddressBook("Clifford", "Gagliardo", "213-804-9687", "cl
 var cliffyBook = document.getElementById('cliffyBook');
 
 function printAddress() {
-    for (i in cliffyAddress) {
-        console.log(cliffyAddress[i]);
+    for (var i in cliffyAddress) {
+        cliffyBook.innerHTML += "<p>" + cliffyAddress[i] + "</p>";
     };
 
 }
